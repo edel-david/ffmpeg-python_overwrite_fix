@@ -1,3 +1,12 @@
+
+
+# THIS IS A FORK:
+only change is in ffmpeg/\_run.py from line 171
+
+and version bump to 0.2.1
+
+licence is same as original package
+
 # ffmpeg-python: Python bindings for FFmpeg
 
 [![CI][ci-badge]][ci]
