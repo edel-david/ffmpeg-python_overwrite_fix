@@ -7,6 +7,11 @@ and version bump to 0.2.1
 
 licence is same as original package
 
+## Original repo:
+[ffmpeg-python by kkroening](https://github.com/kkroening/ffmpeg-python)
+
+## Original README:
+
 # ffmpeg-python: Python bindings for FFmpeg
 
 [![CI][ci-badge]][ci]
