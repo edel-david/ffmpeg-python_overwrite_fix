@@ -168,10 +168,18 @@ def get_args(stream_spec, overwrite_output=False):
         operator.add, [_get_output_args(node, stream_name_map) for node in output_nodes]
     )
     args += reduce(operator.add, [_get_global_args(node) for node in global_nodes], [])
-    if overwrite_output:
-        args += ['-y']
-    return args
+    # INFO This was the old code 
+    # if overwrite_output:
+    #    args += ['-y']
+    # return args
+    if overwrite_output==True:
+        args += ['-y']  # as normla
+    # custom change:
+    elif overwrite_output==False:
+        args+=["-n"]    # this is the change in this fork
 
+    # normal again:
+    return args
 
 @output_operator()
 def compile(stream_spec, cmd='ffmpeg', overwrite_output=False):
